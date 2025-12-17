@@ -54,9 +54,9 @@ jobs:
         uses: azure/login@v2
         with:
           # These secrets are automatically managed by Azure, do not change them
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_042F40608F794833878E4070267D4255 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D0C731A88390499C94EE0746960D8F14 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_519D59013280453393961B983377F471 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_F11E7D92393D46E48E417B522ACDE59A }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_2CE63A2812A847E893563DDB628A96E3 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_999D8579784F430B9B7DC645261957FD }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -65,3 +65,4 @@ jobs:
           app-name: 'Copilot-itinfra'
           slot-name: 'Production'
           package: .
+
